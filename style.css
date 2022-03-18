@@ -3,10 +3,13 @@
     -webkit-box-sizing: border-box;
 }
 
+#top-header {
+    background-color: #8FD9A8;
+}
+
 #header {
     display: block;
     overflow: auto;
-    background-color: blanchedalmond;
     padding: 10px;
 }
 
@@ -15,6 +18,10 @@
     align-items: center;
     align-content: space-between;
 }
+div > select {
+    color: black;
+}
+
 
 #welcome {
     display: flex;
@@ -33,12 +40,14 @@
 
 #call-to-action {
     text-align: center;
-    background-color: cadetblue;
-
+    background-color: #2FDD92;
+    color: white;
+    letter-spacing: 3px;
 }
 
+
 #activities {
-    background-color: cadetblue;
+    background-color: #2F86A6;
     display: grid;
     padding: 20px;
     grid-template-columns: repeat(auto-fill, 120px);
@@ -56,12 +65,13 @@
     padding: 6px;
     margin: 5px;
     cursor: pointer;
-    border: 1px solid #ccc !important;
+    border: 3px inset #2FDD92 !important;
     border-radius: 25%;
 }
 
 .activity-wrapper:hover {
     transform: scale(1.1);
+    border: 3px outset #F2F013 !important;
 }
 
 .disable {
@@ -71,6 +81,10 @@
 .name-wrapper {
     margin: 10px 0 0 0;
 }
+.name-wrapper a {   
+    color: white;
+}
+
 
 .activity-image {
     width: 75px;
@@ -91,21 +105,32 @@
     font-size: 60px;
 }
 
+
+
 .logo span {
     padding: 0 5px 0 5px;
     border: 1px black solid;
 }
 
-.location {
+#location {
     float: right;
+    border: white;
+    background: white;
+    color: #2F86A6;
 }
 
-.language {
+#language {
     float: right;
+    border: white;
+    background: white;
+    color: #2F86A6;
 }
 
-.payment {
+#payment {
     float: right;
+    border: white;
+    background: white;
+    color: #2F86A6;
 }
 
 .big-text {
@@ -114,7 +139,7 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 16px;
 }
 
